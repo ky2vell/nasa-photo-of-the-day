@@ -2,7 +2,7 @@ import React from 'react';
 
 function Description({ explanation }) {
   return (
-    <div>
+    <div className='blurb'>
       <p>{explanation}</p>
     </div>
   );
