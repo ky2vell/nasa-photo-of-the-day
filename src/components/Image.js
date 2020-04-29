@@ -1,9 +1,10 @@
 import React from 'react';
+import ModalImage from 'react-modal-image';
 
-function Image({ imgUrl, title }) {
+function Image({ imgUrl, title, hdurl }) {
   return (
     <div className='image_container'>
-      <img src={imgUrl} alt={title} />
+      <ModalImage small={imgUrl} large={hdurl} alt={title} />
     </div>
   );
 }

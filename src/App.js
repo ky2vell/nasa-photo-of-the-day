@@ -21,7 +21,7 @@ function App() {
       <div className='gradient_wrapper'>
         <Date date={data.date} />
         <Title title={data.title} />
-        <Image title={data.title} imgUrl={data.url} />
+        <Image title={data.title} imgUrl={data.url} hdurl={data.hdurl} />
       </div>
       <Description explanation={data.explanation} />
     </div>

@@ -164,14 +164,10 @@ h1 {
 
 .image_container {
   box-shadow: 0 10px 25px -6px #545353;
-  border-radius: 20px 20px 0 0;
+  max-width: 810px;
 }
 
 .image_container img {
-  width: 100%;
-  height: auto;
-  max-width: 810px;
-  border-radius: 20px 20px 0 0;
   display: block;
 }
 
