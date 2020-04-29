@@ -12,7 +12,10 @@
     "react-day-picker": "^7.4.8",
     "react-dom": "^16.13.1",
     "react-modal-image": "^2.5.0",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "reactjs-popup": "^1.5.0",
+    "redux": "^4.0.5",
+    "video-react": "^0.14.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -7,6 +7,7 @@ import DayPickerInput from 'react-day-picker/DayPickerInput';
 import { DateUtils } from 'react-day-picker';
 import dateFnsFormat from 'date-fns/format';
 import dateFnsParse from 'date-fns/parse';
+import Popup from 'reactjs-popup';
 import './App.css';
 import 'react-day-picker/lib/style.css';
 
@@ -14,10 +15,11 @@ function App() {
   const [data, setData] = useState([]);
   const [day, setDay] = useState(dateFnsFormat(new Date(), 'yyyy-MM-dd'));
   const FORMAT = 'MM/dd/yyyy';
+  const apiKey = 'Ozq52y6qNvTpitfGgGfEsapsfWV9UjJ4oa4WRQGr';
 
   useEffect(() => {
     axios
-      .get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=${day}`)
+      .get(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${day}`)
       .then(res => setData(res.data))
       .catch(console.log);
   }, [day]);
@@ -28,27 +30,38 @@ function App() {
 
   return (
     <div className='App'>
-      <div className='gradient_wrapper'>
-        <DayPickerInput
-          formatDate={formatDate}
-          format={FORMAT}
-          parseDate={parseDate}
-          placeholder={`${dateFnsFormat(new Date(), FORMAT)}`}
-          onDayChange={urlDatePicker}
-          dayPickerProps={{
-            modifiers: {
-              disabled: [
-                {
-                  after: new Date()
-                }
-              ]
-            }
-          }}
+      <div className='top-container'>
+        <div className='gradient_wrapper'>
+          <DayPickerInput
+            formatDate={formatDate}
+            format={FORMAT}
+            parseDate={parseDate}
+            placeholder={`${dateFnsFormat(new Date(), FORMAT)}`}
+            onDayChange={urlDatePicker}
+            dayPickerProps={{
+              modifiers: {
+                disabled: [
+                  {
+                    after: new Date()
+                  }
+                ]
+              }
+            }}
+          />
+          <Title title={data.title} />
+          <Popup modal trigger={<button>Learn More</button>}>
+            {close => (
+              <Description explanation={data.explanation} close={close} />
+            )}
+          </Popup>
+        </div>
+        <Image
+          title={data.title}
+          imgUrl={data.url}
+          hdurl={data.hdurl}
+          mediaType={data.media_type}
         />
-        <Title title={data.title} />
-        <Image title={data.title} imgUrl={data.url} hdurl={data.hdurl} />
       </div>
-      <Description explanation={data.explanation} />
     </div>
   );
 }
