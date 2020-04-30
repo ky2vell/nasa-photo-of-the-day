@@ -264,6 +264,7 @@ h3 {
   -webkit-box-shadow: 20px 20px 40px #000000;
   box-shadow: 20px 20px 40px #000000;
   cursor: auto;
+  max-width: 850px;
 }
 .modal > .content {
   width: 100%;
@@ -305,16 +306,17 @@ h3 {
 @media screen and (min-width: 1900px) {
   h1 {
     max-width: 1000px;
-    font-size: 65px;
+    font-size: 70px;
   }
-
   h3 {
     font-size: 2.3em;
   }
-
   .date-select,
   .gradient_wrapper .learn {
     font-size: 1.3em;
+  }
+  .copyright {
+    font-size: 13px;
   }
 }
 
