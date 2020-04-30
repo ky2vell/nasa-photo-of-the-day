@@ -302,6 +302,22 @@ h3 {
   background: black;
 }
 
+@media screen and (min-width: 1900px) {
+  h1 {
+    max-width: 1000px;
+    font-size: 65px;
+  }
+
+  h3 {
+    font-size: 2.3em;
+  }
+
+  .date-select,
+  .gradient_wrapper .learn {
+    font-size: 1.3em;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .top-container {
     -webkit-box-orient: vertical;
