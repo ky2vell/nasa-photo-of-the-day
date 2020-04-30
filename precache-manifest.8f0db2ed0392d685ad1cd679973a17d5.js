@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cf0d70056634cc6c3d1d6709d4755de3",
+    "revision": "2dceaa6d5cbf342a6b0ba28def4e800f",
     "url": "/nasa-photo-of-the-day/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nasa-photo-of-the-day/static/css/2.b90ce945.chunk.css"
   },
   {
-    "revision": "f72f1597ecbac56ab6c6",
-    "url": "/nasa-photo-of-the-day/static/css/main.3b31be18.chunk.css"
+    "revision": "02a71089a43bb768e260",
+    "url": "/nasa-photo-of-the-day/static/css/main.97e55631.chunk.css"
   },
   {
     "revision": "2496f5edbc89e385d3fb",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nasa-photo-of-the-day/static/js/2.91f8eee2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f72f1597ecbac56ab6c6",
+    "revision": "02a71089a43bb768e260",
     "url": "/nasa-photo-of-the-day/static/js/main.84936684.chunk.js"
   },
   {

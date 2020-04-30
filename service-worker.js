@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/nasa-photo-of-the-day/precache-manifest.4a861d96f44aea7cb189c8141c299b39.js"
+  "/nasa-photo-of-the-day/precache-manifest.8f0db2ed0392d685ad1cd679973a17d5.js"
 );
 
 self.addEventListener('message', (event) => {
