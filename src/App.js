@@ -29,19 +29,25 @@ function App() {
     <div className='App'>
       <div className='top-container'>
         <div className='gradient_wrapper'>
-          <DatePicker
-            selected={null}
-            onChange={date => setDay(date)}
-            maxDate={new Date()}
-            placeholderText='Click to Select a Date!'
-            withPortal
-          />
+          <h3>{moment(day.toString()).format('LL')}</h3>
           <Title title={data.title} />
-          <Popup modal trigger={<button className='learn'>Learn More</button>}>
-            {close => (
-              <Description explanation={data.explanation} close={close} />
-            )}
-          </Popup>
+          <div className='button-wrapper'>
+            <Popup
+              modal
+              trigger={<button className='learn'>Learn More</button>}
+            >
+              {close => (
+                <Description explanation={data.explanation} close={close} />
+              )}
+            </Popup>
+            <DatePicker
+              selected={null}
+              onChange={date => setDay(date)}
+              maxDate={new Date()}
+              placeholderText='Select a Date!'
+              withPortal
+            />
+          </div>
         </div>
         <Image
           title={data.title}
