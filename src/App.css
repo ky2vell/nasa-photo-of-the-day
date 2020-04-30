@@ -150,10 +150,10 @@ table {
   width: 50%;
 }
 
-.DayPickerInput input,
-.gradient_wrapper button {
-  padding: 0.5em 1em;
-  border: 1px solid #ddd;
+.react-datepicker__input-container input,
+.gradient_wrapper .learn {
+  padding: 0.75em 1.4em;
+  border: none;
   font-size: 1em;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
     sans-serif;
@@ -162,6 +162,26 @@ table {
   cursor: pointer;
 }
 
+.react-datepicker__input-container input {
+  background: #ce2525;
+}
+::-webkit-input-placeholder {
+  color: #ffffff;
+}
+::-moz-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #ffffff;
+}
+::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+::placeholder {
+  color: #ffffff;
+}
 h1 {
   font-family: 'Orbitron', sans-serif;
   font-size: 50px;
@@ -196,6 +216,7 @@ h1 {
 }
 .modal > .content {
   width: 100%;
+  text-align: left;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
   color: rgb(0, 0, 0);
