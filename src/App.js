@@ -43,10 +43,13 @@ function App() {
               )}
             </Popup>
             <DatePicker
-              selected={null}
+              selected={day}
               onChange={date => setDay(date)}
               maxDate={new Date()}
-              placeholderText='Select a Date!'
+              customInput={
+                <button className='date-select'>Select a Date!</button>
+              }
+              disabledKeyboardNavigation
               withPortal
             />
           </div>
