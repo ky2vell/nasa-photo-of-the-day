@@ -242,6 +242,7 @@ h3 {
   border: 1px solid #ecf1178a;
   padding: 8px 15px;
   border-radius: 3px;
+  margin-top: auto;
 }
 
 .image_container {
@@ -261,6 +262,12 @@ h3 {
 
 .image_container img {
   display: block;
+}
+
+.copyright {
+  color: white;
+  font-size: 12px;
+  margin: auto 0 20px;
 }
 
 .modal {
@@ -313,7 +320,7 @@ h3 {
   background: black;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
   .top-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -363,12 +370,8 @@ h3 {
 }
 
 @media screen and (max-width: 425px) {
-  h3 {
-    font-size: 1.5em;
-  }
   h1 {
-    font-size: 35px;
-    padding: 22px 20px 26px;
+    font-size: 40px;
   }
   .popup-content {
     width: 100% !important;
@@ -387,9 +390,6 @@ h3 {
     width: 90%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-  }
-  .box {
-    margin-top: 10px;
   }
 }
 

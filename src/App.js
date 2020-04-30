@@ -3,6 +3,7 @@ import Title from './components/Title';
 import Image from './components/Image';
 import Description from './components/Description';
 import MobileScroll from './components/MobileScroll';
+import Copyright from './components/Copyright';
 import axios from 'axios';
 import Popup from 'reactjs-popup';
 import moment from 'moment';
@@ -50,6 +51,7 @@ function App() {
             />
           </div>
           <MobileScroll />
+          <Copyright />
         </div>
         <Image
           title={data.title}
