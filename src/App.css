@@ -227,8 +227,12 @@ h1 {
 }
 
 h3 {
-  font-size: 2em;
-  font-weight: 900;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #ecf117;
+  border: 1px solid #ecf1178a;
+  padding: 8px 15px;
+  border-radius: 3px;
 }
 
 .image_container {
@@ -296,6 +300,10 @@ h3 {
   cursor: pointer;
 }
 
+.react-player {
+  background: black;
+}
+
 @media screen and (max-width: 767px) {
   .top-container {
     -webkit-box-orient: vertical;
@@ -311,6 +319,10 @@ h3 {
   }
   .popup-content {
     width: 100% !important;
+  }
+  .react-player {
+    width: 100% !important;
+    height: 100vh !important;
   }
 }
 

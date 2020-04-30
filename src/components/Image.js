@@ -1,7 +1,6 @@
 import React from 'react';
 import ModalImage from 'react-modal-image';
-import { Player } from 'video-react';
-import 'video-react/dist/video-react.css';
+import ReactPlayer from 'react-player';
 
 function Image({ imgUrl, title, hdurl, mediaType }) {
   if (mediaType === 'image') {
@@ -17,9 +16,14 @@ function Image({ imgUrl, title, hdurl, mediaType }) {
     );
   } else {
     return (
-      <Player>
-        <source src={imgUrl} fluid='false' width='810' />
-      </Player>
+      <ReactPlayer
+        url={imgUrl}
+        className='react-player'
+        controls={true}
+        playing
+        width='50%'
+        height='100%'
+      />
     );
   }
 }

@@ -29,7 +29,7 @@ function App() {
     <div className='App'>
       <div className='top-container'>
         <div className='gradient_wrapper'>
-          <h3>{moment(day.toString()).format('LL')}</h3>
+          <h3>{moment(day.toString(), 'LLLL').format('MMM Do, YYYY')}</h3>
           <Title title={data.title} />
           <div className='button-wrapper'>
             <Popup
