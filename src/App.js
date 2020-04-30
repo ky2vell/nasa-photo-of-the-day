@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Title from './components/Title';
 import Image from './components/Image';
 import Description from './components/Description';
+import MobileScroll from './components/MobileScroll';
 import axios from 'axios';
 import Popup from 'reactjs-popup';
 import moment from 'moment';
@@ -48,6 +49,7 @@ function App() {
               withPortal
             />
           </div>
+          <MobileScroll />
         </div>
         <Image
           title={data.title}

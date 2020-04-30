@@ -130,6 +130,12 @@ table {
 
 /* STYLES START HERE */
 
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+html {
+  scroll-behavior: smooth;
+}
+
 .top-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,6 +144,12 @@ table {
 }
 
 .gradient_wrapper {
+  background: -o-linear-gradient(
+    right,
+    rgb(148, 91, 177),
+    rgb(73, 66, 173),
+    rgb(14, 113, 226)
+  );
   background: -webkit-gradient(
     linear,
     right top,
@@ -145,12 +157,6 @@ table {
     from(rgb(148, 91, 177)),
     color-stop(rgb(73, 66, 173)),
     to(rgb(14, 113, 226))
-  );
-  background: -o-linear-gradient(
-    right,
-    rgb(148, 91, 177),
-    rgb(73, 66, 173),
-    rgb(14, 113, 226)
   );
   background: linear-gradient(
     -90deg,
@@ -195,6 +201,7 @@ table {
 
 .gradient_wrapper .learn {
   margin-right: 20px;
+  background: #ffffff;
 }
 
 .react-datepicker__input-container input {
@@ -218,7 +225,9 @@ table {
 
 ::placeholder {
   color: #ffffff;
+  opacity: 1;
 }
+
 h1 {
   font-family: 'Orbitron', sans-serif;
   font-size: 50px;
@@ -324,6 +333,33 @@ h3 {
     width: 100% !important;
     height: 100vh !important;
   }
+  .box {
+    margin-top: 20px;
+  }
+
+  .box span {
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: -10px;
+    -webkit-animation: animate 2s infinite;
+    animation: animate 2s infinite;
+  }
+
+  .box span:nth-child(2) {
+    -webkit-animation-delay: -0.2s;
+    animation-delay: -0.2s;
+  }
+
+  .box span:nth-child(3) {
+    -webkit-animation-delay: -0.4s;
+    animation-delay: -0.4s;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -342,7 +378,6 @@ h3 {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 100%;
   }
   .gradient_wrapper .learn {
     width: 90%;
@@ -350,6 +385,37 @@ h3 {
   }
   .react-datepicker__input-container input {
     width: 90%;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+  }
+  .box {
+    margin-top: 10px;
+  }
+}
+
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotate(45deg) translate(10px, 10px);
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotate(45deg) translate(10px, 10px);
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+  100% {
+    opacity: 0;
   }
 }
