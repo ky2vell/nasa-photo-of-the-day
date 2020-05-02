@@ -50,6 +50,7 @@ function App() {
                 <button className='date-select'>Select a Date!</button>
               }
               disabledKeyboardNavigation
+              fixedHeight
               withPortal
             />
           </div>
