@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/nasa-photo-of-the-day/static/css/main.90a04ec6.chunk.css",
-    "main.js": "/nasa-photo-of-the-day/static/js/main.84936684.chunk.js",
-    "main.js.map": "/nasa-photo-of-the-day/static/js/main.84936684.chunk.js.map",
+    "main.css": "/nasa-photo-of-the-day/static/css/main.5078bde2.chunk.css",
+    "main.js": "/nasa-photo-of-the-day/static/js/main.36aed232.chunk.js",
+    "main.js.map": "/nasa-photo-of-the-day/static/js/main.36aed232.chunk.js.map",
     "runtime-main.js": "/nasa-photo-of-the-day/static/js/runtime-main.82a31dc6.js",
     "runtime-main.js.map": "/nasa-photo-of-the-day/static/js/runtime-main.82a31dc6.js.map",
     "static/css/2.b90ce945.chunk.css": "/nasa-photo-of-the-day/static/css/2.b90ce945.chunk.css",
     "static/js/2.91f8eee2.chunk.js": "/nasa-photo-of-the-day/static/js/2.91f8eee2.chunk.js",
     "static/js/2.91f8eee2.chunk.js.map": "/nasa-photo-of-the-day/static/js/2.91f8eee2.chunk.js.map",
     "index.html": "/nasa-photo-of-the-day/index.html",
-    "precache-manifest.491c3f25b661fafc5d9d47ab2a744ca6.js": "/nasa-photo-of-the-day/precache-manifest.491c3f25b661fafc5d9d47ab2a744ca6.js",
+    "precache-manifest.dffbe154e9359310bfe5e06b89544b09.js": "/nasa-photo-of-the-day/precache-manifest.dffbe154e9359310bfe5e06b89544b09.js",
     "service-worker.js": "/nasa-photo-of-the-day/service-worker.js",
     "static/css/2.b90ce945.chunk.css.map": "/nasa-photo-of-the-day/static/css/2.b90ce945.chunk.css.map",
-    "static/css/main.90a04ec6.chunk.css.map": "/nasa-photo-of-the-day/static/css/main.90a04ec6.chunk.css.map",
+    "static/css/main.5078bde2.chunk.css.map": "/nasa-photo-of-the-day/static/css/main.5078bde2.chunk.css.map",
     "static/js/2.91f8eee2.chunk.js.LICENSE.txt": "/nasa-photo-of-the-day/static/js/2.91f8eee2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.82a31dc6.js",
     "static/css/2.b90ce945.chunk.css",
     "static/js/2.91f8eee2.chunk.js",
-    "static/css/main.90a04ec6.chunk.css",
-    "static/js/main.84936684.chunk.js"
+    "static/css/main.5078bde2.chunk.css",
+    "static/js/main.36aed232.chunk.js"
   ]
 }
